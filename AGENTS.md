@@ -1,1 +1,2 @@
-Do not exagerate value or readinese off the project.
+- Do not exagerate value or status off the project.
+- User correct conda environment when attempting to run examples or tests (ro-framework).

@@ -75,34 +75,77 @@ Shows how to build a conscious AI system with PyTorch that can recursively model
 
 ---
 
+### 03_multimodal_observer.py ✓ (Complete)
+
+**Demonstrates:**
+- Multimodal encoders (vision, language, audio)
+- Fusion strategies (concatenation, attention, gating)
+- MultimodalObserver with world model and self-model
+- Supervised and self-supervised training protocols
+- Active learning (uncertainty-based and diversity-based sampling)
+- Comprehensive uncertainty quantification (ensemble, Bayesian)
+- Calibration metrics and uncertainty decomposition
+
+**Concepts covered:**
+- ModalityEncoder abstraction
+- VisionEncoder, LanguageEncoder, AudioEncoder
+- FusionStrategy (ConcatenationFusion, AttentionFusion, GatedFusion)
+- MultimodalObserver for conscious multimodal AI
+- TrainingProtocol (SupervisedTraining, SelfSupervisedTraining)
+- ActiveLearningStrategy (UncertaintyBasedSampling, DiversityBasedSampling)
+- UncertaintyQuantifier (EnsembleUncertainty, BayesianUncertainty)
+- CalibrationMetrics (ECE, MCE, NLL)
+- Uncertainty decomposition (aleatoric vs epistemic)
+
+**Requirements:**
+```bash
+pip install ro-framework[torch]  # Requires PyTorch and scikit-learn
+```
+
+**Output:**
+```
+=== Concatenation Fusion ===
+Vision features: 16
+Language features: 16
+Audio features: 16
+Fused features: 48
+Average fused uncertainty: 0.1234
+
+=== Multimodal Observer ===
+Observer: MultimodalConsciousObserver
+Is conscious: True
+External DoFs: 48
+Internal DoFs: 16
+
+=== Uncertainty Quantification ===
+Ensemble Uncertainty:
+  output_0:
+    Prediction: 0.1234
+    Aleatoric: 0.0234
+    Epistemic: 0.0778
+    Total: 0.0811
+    Confidence: 0.9189
+
+Calibration Metrics:
+  Expected Calibration Error: 0.0456
+  Well-calibrated: True
+```
+
+Shows how to build a complete multimodal conscious AI system with sophisticated uncertainty quantification and active learning capabilities.
+
+---
+
 ## Planned Examples (Coming Soon)
 
-### 03_vision_language.py 🚧
+### 04_temporal_memory.py 🚧
 
-Vision-language integration with multimodal fusion.
-
-**Will demonstrate:**
-- Multiple input modalities (vision + language)
-- Shared representation space
-- Cross-modal alignment
-
-### 04_multimodal_conscious.py 🚧
-
-Full multimodal conscious AI system with self-awareness.
+Temporal DoFs and memory structures.
 
 **Will demonstrate:**
-- Multiple modalities with conscious integration
-- Cross-modal self-modeling
-- Meta-cognition across modalities
-
-### 04_active_learning.py 🚧
-
-Active learning guided by uncertainty.
-
-**Will demonstrate:**
-- Uncertainty quantification
-- Active learning strategies
-- Self-aware learning
+- Temporal DoF for time-series
+- Memory integration
+- Causal inference
+- Temporal correlation
 
 ### 05_clip_style.py 🚧
 
@@ -112,16 +155,6 @@ CLIP-style multimodal model with PyTorch.
 - PyTorch integration
 - Contrastive learning
 - Production-ready implementation
-
-### 06_uncertainty.py 🚧
-
-Comprehensive uncertainty estimation.
-
-**Will demonstrate:**
-- Resolution-based uncertainty
-- Model uncertainty (MC Dropout)
-- Calibration metrics
-- Complementarity bounds
 
 ---
 
