@@ -37,9 +37,47 @@ Shows how an observer maps external sensor readings to internal latent states.
 
 ---
 
+### 02_pytorch_conscious_observer.py ✓ (Complete)
+
+**Demonstrates:**
+- PyTorch neural network integration
+- World model (MLP: external → internal)
+- Self-model (MLP: internal → internal, SAME architecture)
+- Recursive self-observation (consciousness!)
+- MC Dropout uncertainty quantification
+- Consciousness evaluation metrics
+- Correlation analysis (Pearson, MI)
+
+**Concepts covered:**
+- PyTorch integration (`TorchNeuralMapping`)
+- Conscious observer (with self-model)
+- Structural consciousness evaluation
+- Epistemic uncertainty via MC Dropout
+- Correlation between external and internal DoFs
+
+**Requirements:**
+```bash
+pip install ro-framework[torch]  # Requires PyTorch
+```
+
+**Output:**
+```
+🧠 Consciousness Score: 0.782/1.0
+
+Consciousness Metrics:
+  - Has self-model: True
+  - Recursive depth: 1
+  - Self-accuracy: 0.873
+  - Architectural similarity: 1.000
+```
+
+Shows how to build a conscious AI system with PyTorch that can recursively model its own internal states.
+
+---
+
 ## Planned Examples (Coming Soon)
 
-### 02_vision_language.py 🚧
+### 03_vision_language.py 🚧
 
 Vision-language integration with multimodal fusion.
 
@@ -48,15 +86,14 @@ Vision-language integration with multimodal fusion.
 - Shared representation space
 - Cross-modal alignment
 
-### 03_conscious_ai.py 🚧
+### 04_multimodal_conscious.py 🚧
 
-Full conscious AI system with self-awareness.
+Full multimodal conscious AI system with self-awareness.
 
 **Will demonstrate:**
-- Self-model (internal→internal mapping)
-- Recursive self-observation
-- Consciousness evaluation metrics
-- Meta-cognition
+- Multiple modalities with conscious integration
+- Cross-modal self-modeling
+- Meta-cognition across modalities
 
 ### 04_active_learning.py 🚧
 
