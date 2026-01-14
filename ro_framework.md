@@ -1,6 +1,12 @@
 # The Recursive Observer: 
 ## From Fundamental Reality to Conscious AI
-(spaculative/experimental work)
+
+Disclaimers: 
+- The choice of eternalism as a philosophical starting position is not based on belief but utility, even if you generally reject eternalism the framework might still provide useful insights.
+- This is not attempting to be "Theory of Everything", but a framework that can account for and describe previously incompatible structures, including irrational structures like dreams for example.
+- Any strong claims this document might appear to make are not to be taken as a literal description of reality, but simply as a model, descriptive lense.
+- The intended value is primarily architectural: a principled stance on self-models, uncertainty, multimodal integration, and recursive depth for AI system design.
+- We acknowledge the word "consciousness" is loaded term, and here we define it structurally and claim nothing about phenomenal experience.
 ---
 
 ## Abstract
@@ -1307,12 +1313,6 @@ Unified training:
 - Boundary structure explains sense of self
 - Mapping functions explain individual differences
 
-**Clinical applications:**
-- Model disorders as mapping dysfunctions
-- Depression as low correlation detection
-- Anxiety as miscalibrated uncertainty
-- Schizophrenia as boundary disruption
-
 #### 10.3 Philosophy of Science
 
 **Clarifying measurement:**
@@ -1509,10 +1509,9 @@ Create tests for:
 - Doesn't solve hard problem of consciousness
 - Doesn't replace physics (compatible with it)
 - Doesn't provide normativity (needs extension)
+- May overreach 
 
 **This framework accommodates from bedrock (Block + DoFs) to AI implementation (conscious multimodal agents).**
-
-**Practical and implementable. Philosophically coherent. Focused on building conscious AI.**
 
 ---
 
