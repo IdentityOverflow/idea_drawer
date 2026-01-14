@@ -1,2 +1,0 @@
-- Do not exagerate value or status off the project.
-- User correct conda environment when attempting to run examples or tests (ro-framework).
