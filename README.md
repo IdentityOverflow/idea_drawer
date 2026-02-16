@@ -8,3 +8,5 @@
 * A modular framework for building dynamic prompts with pluggable components for AI systems.
 ### [Modular Dynamic Context System (MDCS) - Prototype 2](https://github.com/IdentityOverflow/MDCS)
 * A full-stack web application for managing AI conversations with dynamic, modular system prompts. The system allows system prompts to be composed from reusable modules that can execute Python scripts, call AI models, and maintain state across conversations.
+### [Experimental base](https://github.com/IdentityOverflow/LLM-experimental-base)
+* An OpenAI API inference passthrogu, where you can add additional scafolding and capabilities to the model output before passing it to your application. Langchain and LangGraph libraries ready to go.
