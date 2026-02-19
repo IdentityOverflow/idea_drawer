@@ -1,4 +1,4 @@
-# Idea drawer
+# Ideas & Experiments
 
 ### [Recursive Observer Framework](ro_framework/ro_framework.md)
 * Philosophical thesis aimed at bridging the language gap between disparate domains, with the goal of being formalizable and translated into code for use in AI implementation.
