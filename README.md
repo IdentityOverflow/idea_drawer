@@ -13,6 +13,7 @@ Graded knowledge assessment — Go beyond accuracy. When you wrap a model and fe
 * Is uncertainty calibrated? (when it says "80% confident", is it right 80% of the time?)
 ### [Organic Cognitive Architecture (OCA)](organic_cognitive_architecture_oca.md)
 * A reservoir-based, continuously learning cognitive architecture inspired by biological brains but grounded in control theory and reinforcement learning.
+* Experiment idea: Tuning fork principle - Use EEG signals (e.g., from Neurosity Crown) to extract dominant brainwave frequencies (delta, theta, alpha, beta, gamma), then tune a reservoir computing system so its internal dynamics resonate at matching frequencies. Look for higher-coherence dynamics.
 ### [Dynamic System Prompt Framework - Prototype 1](https://github.com/IdentityOverflow/DynamicSystemPrompt-Prototype)
 * A modular framework for building dynamic prompts with pluggable components for AI systems.
 ### [Modular Dynamic Context System (MDCS) - Prototype 2](https://github.com/IdentityOverflow/MDCS)
