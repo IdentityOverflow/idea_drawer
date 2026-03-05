@@ -12,7 +12,7 @@ Graded knowledge assessment — Go beyond accuracy. When you wrap a model and fe
 * Is there systematic bias? (consistently wrong in one direction)
 * How noisy is the mapping? (inconsistent outputs for similar inputs)
 * Is uncertainty calibrated? (when it says "80% confident", is it right 80% of the time?)
-### Cognitive Runtime Architecture
+### [Cognitive Runtime Architecture](cognitive_runtime_with_SLMs.md)
 The Cognitive Runtime is a system architecture that enables a **small language model** to maintain coherent, long-running conversations by simulating **multi-thread cognition**, memory consolidation, and predictive reasoning.
 
 The runtime treats the LLM as a **stateless reasoning engine** while managing memory, attention, and interaction pacing externally.
