@@ -12,6 +12,18 @@ Graded knowledge assessment — Go beyond accuracy. When you wrap a model and fe
 * Is there systematic bias? (consistently wrong in one direction)
 * How noisy is the mapping? (inconsistent outputs for similar inputs)
 * Is uncertainty calibrated? (when it says "80% confident", is it right 80% of the time?)
+### Cognitive Runtime Architecture
+The Cognitive Runtime is a system architecture that enables a **small language model** to maintain coherent, long-running conversations by simulating **multi-thread cognition**, memory consolidation, and predictive reasoning.
+
+The runtime treats the LLM as a **stateless reasoning engine** while managing memory, attention, and interaction pacing externally.
+
+Primary goals:
+
+* transcend LLM context window limitations
+* maintain conversation coherence indefinitely
+* simulate multi-thread cognition
+* support reflection and background processing
+* provide natural, paced interaction with the user
 ### [Organic Cognitive Architecture (OCA)](organic_cognitive_architecture_oca.md)
 * A reservoir-based, continuously learning cognitive architecture inspired by biological brains but grounded in control theory and reinforcement learning.
 * Experiment idea: Tuning fork principle - Use EEG signals (e.g., from Neurosity Crown) to extract dominant brainwave frequencies (delta, theta, alpha, beta, gamma), then tune a reservoir computing system so its internal dynamics resonate at matching frequencies. Look for higher-coherence dynamics.
