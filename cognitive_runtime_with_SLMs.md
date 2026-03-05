@@ -675,10 +675,3 @@ interaction pacing
 ```
 
 This architecture enables a small LLM to function as a **persistent cognitive agent** capable of maintaining coherent conversations indefinitely.
-
----
-
-If you'd like, I can also produce **one extremely useful addition for implementation**:
-
-A **visual architecture diagram + component map** (scheduler, memory manager, thread manager, LLM interface) so the whole system is easier to implement and reason about.
-
