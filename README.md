@@ -24,6 +24,8 @@ Primary goals:
 * simulate multi-thread cognition
 * support reflection and background processing
 * provide natural, paced interaction with the user
+
+**Implemented**: the thread-activation dynamics, decay, question attractors, and cued reinjection from this document are now running code — see [Ghost in the Proxy](https://github.com/IdentityOverflow/ghost-in-the-proxy) below.
 ### [Organic Cognitive Architecture (OCA)](organic_cognitive_architecture_oca.md)
 * A reservoir-based, continuously learning cognitive architecture inspired by biological brains but grounded in control theory and reinforcement learning.
 * Experiment idea: Tuning fork principle - Use EEG signals (e.g., from Neurosity Crown) to extract dominant brainwave frequencies (delta, theta, alpha, beta, gamma), then tune a reservoir computing system so its internal dynamics resonate at matching frequencies. Look for higher-coherence dynamics.
@@ -31,5 +33,8 @@ Primary goals:
 * A modular framework for building dynamic prompts with pluggable components for AI systems.
 ### [Modular Dynamic Context System (MDCS) - Prototype 2](https://github.com/IdentityOverflow/MDCS)
 * A full-stack web application for managing AI conversations with dynamic, modular system prompts. The system allows system prompts to be composed from reusable modules that can execute Python scripts, call AI models, and maintain state across conversations.
-### [Experimental base](https://github.com/IdentityOverflow/LLM-experimental-base)
-* An OpenAI API inference passthrough, where you can add additional scaffolding and capabilities to the model output before passing it to your application. LangChain and LangGraph libraries ready to go.
+### [Ghost in the Proxy](https://github.com/IdentityOverflow/ghost-in-the-proxy)
+* A persistent, structured, living mind for any OpenAI-compatible model — instead of a context window full of dead transcript. An OpenAI-compatible proxy whose middleware treats the client transcript as a sensory event stream and assembles the model's context fresh every request: structured ledger (facts / decisions with status / commitments with triggers), CRS thread-activation dynamics with cued recall, a verbatim `recall` tool over the raw event store, per-turn tool routing, and tool-payload containment. Synthesizes the Cognitive Runtime Architecture (above) with the openclaw conscious-workspace anatomy, gated phase by phase on an eval suite.
+* Founding result: gemma-4-12B at an 8k window went from 57% (transcript-stuffing baseline) to 86% with the structured ledger, and to 31/32 with the full architecture — flat token curves, and survival at 4k where the baseline aborts mid-conversation.
+### [LLM Passthrough Endpoint](https://github.com/IdentityOverflow/LLM-passthrough-endpoint)
+* A faithful OpenAI-compatible passthrough proxy (the shell Ghost in the Proxy lives in): multi-provider routing, model aliasing, SSE streaming, and a pinned fidelity contract — unmodeled fields pass through, tool round-trips intact, backend errors mirrored. Use it as-is, or as a clean base for your own inference-time scaffolding.
