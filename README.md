@@ -12,6 +12,9 @@ Graded knowledge assessment — Go beyond accuracy. When you wrap a model and fe
 * Is there systematic bias? (consistently wrong in one direction)
 * How noisy is the mapping? (inconsistent outputs for similar inputs)
 * Is uncertainty calibrated? (when it says "80% confident", is it right 80% of the time?)
+### [Cognitive Workspace Architecture](cognitive_workspace_architecture.md)
+* Context is not memory: a context window is a conscious workspace — a narrow, active field where goals, entities, commitments, retrieved facts, and possible actions are bound together — while durable memory lives outside it as structured state, indexed episodes, and provenance-backed artifacts. Defines the stores, components, and per-turn contracts (the *anatomy*) that [Ghost in the Proxy](https://github.com/IdentityOverflow/ghost-in-the-proxy) implements; the Cognitive Runtime below supplies the dynamics (*physiology*), and OCA the developmental arc.
+
 ### [Cognitive Runtime Architecture](cognitive_runtime_with_SLMs.md)
 The Cognitive Runtime is a system architecture that enables a **small language model** to maintain coherent, long-running conversations by simulating **multi-thread cognition**, memory consolidation, and predictive reasoning.
 
@@ -34,7 +37,7 @@ Primary goals:
 ### [Modular Dynamic Context System (MDCS) - Prototype 2](https://github.com/IdentityOverflow/MDCS)
 * A full-stack web application for managing AI conversations with dynamic, modular system prompts. The system allows system prompts to be composed from reusable modules that can execute Python scripts, call AI models, and maintain state across conversations.
 ### [Ghost in the Proxy](https://github.com/IdentityOverflow/ghost-in-the-proxy)
-* A persistent, structured, living mind for any OpenAI-compatible model — instead of a context window full of dead transcript. An OpenAI-compatible proxy whose middleware treats the client transcript as a sensory event stream and assembles the model's context fresh every request: structured ledger (facts / decisions with status / commitments with triggers), CRS thread-activation dynamics with cued recall, a verbatim `recall` tool over the raw event store, per-turn tool routing, and tool-payload containment. Synthesizes the Cognitive Runtime Architecture (above) with the openclaw conscious-workspace anatomy, gated phase by phase on an eval suite.
+* A persistent, structured, living mind for any OpenAI-compatible model — instead of a context window full of dead transcript. An OpenAI-compatible proxy whose middleware treats the client transcript as a sensory event stream and assembles the model's context fresh every request: structured ledger (facts / decisions with status / commitments with triggers), CRS thread-activation dynamics with cued recall, a verbatim `recall` tool over the raw event store, per-turn tool routing, and tool-payload containment. Synthesizes the Cognitive Runtime Architecture (above) with the [Cognitive Workspace Architecture](cognitive_workspace_architecture.md) anatomy, gated phase by phase on an eval suite.
 * Founding result: gemma-4-12B at an 8k window went from 57% (transcript-stuffing baseline) to 86% with the structured ledger, and to 31/32 with the full architecture — flat token curves, and survival at 4k where the baseline aborts mid-conversation.
 ### [LLM Passthrough Endpoint](https://github.com/IdentityOverflow/LLM-passthrough-endpoint)
 * A faithful OpenAI-compatible passthrough proxy (the shell Ghost in the Proxy lives in): multi-provider routing, model aliasing, SSE streaming, and a pinned fidelity contract — unmodeled fields pass through, tool round-trips intact, backend errors mirrored. Use it as-is, or as a clean base for your own inference-time scaffolding.
